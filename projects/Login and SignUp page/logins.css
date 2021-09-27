@@ -1,0 +1,240 @@
+body{
+    background-image: url("background.jpg");
+}
+
+
+/* Vertical Line */
+.hr {
+    position: absolute;
+    left: 49%;
+    transform: translate(-50%);
+    border: 2px solid rgb(255, 255, 255);
+    width: 25%;
+    margin-top: 10px;   
+    margin-bottom: 10px;
+  }
+  
+  /* Text inside the vertical line i.e the OR Circle */
+  .hr-innertext {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 8px 10px;
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+
+
+.container{
+       background-color: rgba(0, 0, 0, 0.459);
+    padding: 5px 20px 15px 20px;
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-left: 33%;
+    margin-right: 35%;
+}
+    
+/* CSI Logo Area */
+ .image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:30%;
+
+} 
+
+/* Or Login Through Area */
+.fb {
+    background-color: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background-color: #55ACEE;
+    color: white;
+  }
+  
+  .google {
+    background-color: #dd4b39;
+    color: white;
+  }
+  .col {
+    float: left;
+    width: 90%;
+    margin: auto;
+    padding: 12px;
+    margin-top: 20px;
+    margin-left: 3%;
+    margin-bottom: 20px;
+    margin-right: 3%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(100px,1fr));
+    grid-gap: 20px;
+    grid-auto-rows: minmax(20px,auto);
+    grid-auto-columns: minmax(50px,auto);
+
+}
+  .btn {
+      align-items: center;
+    width:auto;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    text-decoration: none; 
+  }
+  .btn:hover {
+    opacity: 1;
+  }
+/* Making the Writing Area Presentable */
+  .login{
+    text-align: center;
+    color: white;
+}
+.log_{
+    font-family: Lobster;
+}
+input[type="text"],
+input[type="password"]{
+    width: 90%;
+    padding: 12px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+} 
+.username_ , .password_{
+    text-align: left;
+    font-family: Playfair Display;
+    margin-left: 10px;
+}
+#username ,#password{
+    text-align: left;
+}
+input[type="button"]    {
+    background-color: #4daea1;
+    color:black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor:pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+.log{
+    text-align: center;
+    font-family: Playfair Display;
+    margin-left: 10px;
+    width: 90%;
+}
+.sign {
+    width: 50%;
+    width: 90%;
+}
+.forgot{
+    width: 90%;
+}
+
+.alternative{
+    display: grid;
+    grid-template-columns: repeat(1fr);
+}
+link{
+    color: white;
+}
+
+/* Bottom Container */
+.log:active , .sign:active , .forgot:active , .btn:active{
+    background: #bccf0f;
+    color: white;
+    -webkit-box-shadow: inset 0px 0px 5px #00756b;
+    -moz-box-shadow: inset 0px 0px 5px #00756b;
+    box-shadow: inset 0px 0px 5px #00756b;
+}
+
+/* Responsive page */
+@media screen and (max-width: 650px) {
+    .col {
+      width: 90%;
+
+    }
+    .hr{
+        width: 80%;
+        margin-left: 7%;
+    }
+    .container{
+        height: auto;
+        margin-right: 2%;
+        margin-left: 2%;
+        width: 100%;
+    }
+    .fb , .twitter , .google{
+        width: 90%;
+        
+    }
+} 
+@media screen and (max-width: 650px) and (min-width:530px){
+    .col {
+      width: 90%;
+      margin-left: 15%;
+    }
+    .hr{
+        width: 80%;
+        margin-left: 7%;
+    }
+    .container{
+        height: auto;
+        margin-right: 2%;
+        margin-left: 2%;
+        width: 100%;
+    }
+    .fb , .twitter , .google{
+        width: 90%;
+        
+    }
+} 
+
+@media screen and (max-width: 1000px) and (min-width:650px){
+    .col {
+      width: 90%;
+      margin-left: 22%;
+    }
+    .hr{
+        width: 60%;
+        margin-left: 2%;
+    }
+    .container{
+        height: auto;
+        margin-right: 50%;
+        margin-left: 13%;
+        width: 70%;
+    }
+    .fb , .twitter , .google{
+        width: 90%;
+        
+    }
+    .log{
+        width: 60%;
+    }
+} 
+/* Footer */
+footer {
+    background: #003366;
+    overflow: hidden;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}

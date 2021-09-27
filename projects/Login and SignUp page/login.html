@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-In</title>
+    <!-- Style(CSS) -->
+    <link rel="stylesheet" href="logins.css">
+    <style>
+        .link{
+            color: limegreen;
+        }
+    </style>
+    <!-- Font -->
+    <!-- Lobster -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<!-- Playfair Display -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+<!--Script(JS) -->
+</head>
+<body>
+  <!-- Main Container -->
+    <div class="container" > 
+        <div > <img src="CSI.png" alt="" class="image" > </div>
+        <div class="login">
+            <h1 class="log_">Log-In</h1>
+            <h3 class="username_"><p><input type="text" name="username" id="username"  placeholder="Username/Email" required></p></h3>
+            <h3 class="password_"><p><input type="password" name="password" id="myInput"  placeholder="Enter Password" required></p></h3>
+            <input type="checkbox" onclick="myFunction()" class="check">Show Password
+  
+            <p>
+                <input type="button" value="Login" class="log">  
+            </p> 
+
+            <div class="hr">
+                <span class="hr-innertext">OR</span>
+              </div>
+              <!-- OR LOGIN Portion -->
+            <div class="col" id="flex">
+                <a href="#" class="fb btn">
+                  
+                  <img src="facebook4.png" alt="" width="20%">
+                  <!-- Login with Facebook -->
+                 </a>
+
+                <a href="#" class="twitter btn">
+                    <img src="twitter.png" alt="" width="20%">
+                  <!-- Login with Twitter -->
+                </a>
+                
+                <a href="#" class="google btn">
+                    <img src="google3.png" alt="" width="20%">
+                    <!-- Login with Google -->
+                </a>
+              </div>
+              <p class="bot-container">
+                  
+                <div class="signupp"><h4>New User...<a href="signup.html" class="link">Sign Up
+
+                 </a> &#8226; &nbsp;<a href="#" class="link" id="forgot-password">Forgot Password?</a></h4>
+                <h3></h3></div>
+
+            </p>
+        </div>
+    </div>  
+    <!-- Just for going back -->
+    <footer>
+    <a href="#">&copy; 2021 | abhiiiiiiijeet</a>
+    <a href="../../index.html">Main Page</a>
+</footer>
+    <!-- For making The password Visible -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myInput");
+            if (x.type === "password") {
+              x.type = "text";
+            } else {
+              x.type = "password";
+            }
+          }</script>
+</body>
+</html>

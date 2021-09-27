@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>WEB FORM</title>
+    <link rel="stylesheet" href="forms.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <form action="">
+        <div class="container">
+
+        <h1 class="main_heading">Payment Form </h1>
+        <p>Required field are marked with *</p>
+        <h3><b><u>Contact Details</u></b></h3>
+        <p>Name:- * <input type="text" name="name" id="name" placeholder="Yash Pal" required></p>
+        <fieldset ><!--FOR MAKING IT A BOX -->
+            <legend>Gender *</legend>
+            <p>Male <input type="radio" name="gender" id="male" required></p>
+            <p>Female <input type="radio" name="gender" id="female" required></p>
+            <p>Other <input type="radio" name="gender" id="other" required></p>
+        </fieldset>
+        <p>Address:- <textarea name="Address" id="address" cols="100" rows="5" placeholder="Enter Your Address"></textarea></p>
+        <p> ID Proof:- *
+            <select value="id_type">
+                <option value = "">--Select a ID Proof --</option>
+                <option value ="addhar_card">Addhar Card</option>
+                <option value ="PAN_Card">PAN Card</option>
+                <option value ="Passport">Passport</option>
+                <option value ="DL">Driving Lincese</option>
+
+            </select>
+        </p>
+        <p>Upload ID Proof:- * <input type="file" name="ID" id="id" required></p>
+        <p>Email:- * <input type="email" name="email" id="email" required placeholder="xyz@gmail.com"></p>
+        <p>PIN:- * <input type="number" name="pin" id="pin" required placeholder="123456"></p>
+        <p>Payment Available (JUST AN EXAMPLE OF CHECKBOX ELEMENT OF FORM)
+            <p>Credit Card <input type="checkbox" name="Card" id="Card"></p>
+            <p>Debit Card <input type="checkbox" name="Card" id="Card"></p>
+            <p>Other <input type="checkbox" name="Card" id="Card"> </p>
+        
+        </p>
+        
+        <hr></hr>
+        <h3><b><u>Payment Details</u></b></h3>
+        <p>Card Type:- *
+            <select name="card_type" id="card_type" required>
+                <option value="">--Select a Card--</option>
+                <option value="visa">VISA</option>
+                <option value="rupay">RuPay</option>
+                <option value="master">MasterCard</option>
+            </select>
+        </p>
+        <p>Card Number:- * <input type="number" name="card_no." id="card_no." required placeholder="1111-2222-3333-4444"></p>
+        <p>Expiry Date:- * <input type="date" name="expiry_date" id="expiry_date" required placeholder="dd-mm-yyyy"></p>
+        <p>CVV:- * <input type="password" name="CVV" id="CVV" required><input type="image" src="CVV.png"  width =3% alt="CVV EXAMPLE" placeholder="123" style="margin-left: 1%;"></p>
+        <p>
+            <input type="submit" value="Pay Now" class="Sub" onclick="done()">  
+            <input type="reset" value="Reset" class="Re" onclick="myFunction()">
+        </p>
+        
+    </form>
+
+</div>
+<!-- Footer Just for Going Back to Main Page -->
+<footer>
+    <a href="#">&copy; 2021 | abhiiiiiiijeet</a>
+    <a href="../../index.html">Main Page</a>
+</footer>
+<Script>
+    function myFunction() 
+{
+  if (confirm("Do you want to reset? All the filled data will be lost!")) 
+  {
+	document.getElementById("myForm").reset();
+	alert("The form was reset");
+	return true;
+  }
+
+  else 
+  {  
+	return false;
+  }
+  function done(){
+      prompt("Enter the OTP");
+  }
+}
+
+</Script>
+    
+</body>
+</html>

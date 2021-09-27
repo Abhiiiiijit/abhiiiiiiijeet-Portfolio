@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    font-size: 17px;
+    padding:8px;
+}
+.container{
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+select,
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+}
+fieldset{
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.main_heading{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+input[type="submit"]    {
+    background-color: #4daea1;
+    color:black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor:pointer;
+    /* width: 100%; */
+}
+input[type="reset"]    {
+    background-color: #b7c21e;
+    color:black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor:pointer;
+    /* width: 100%; */
+}
+
+.Sub:hover 
+{
+    background-color: #4caf84;
+    /* color: red; */
+}
+.Re:hover{
+    background-color:#96a00b;
+    
+}
+/* Footer */
+footer {
+    background: #003366;
+    overflow: hidden;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}

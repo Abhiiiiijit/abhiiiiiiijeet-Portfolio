@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator_css.css">
+    <!-- Font :- Lobster -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<!-- Font :- Dancing Script -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="head">
+        <h1 class="heading"> &#10024; Calsy Calcumate ...... &#8734; </h1>
+    </div>
+    <div class="container">
+        <table class="cal_body">
+            <!-- The Area For Showing the Input -->
+            <!-- Output Area -->
+            <tr class="writing_space" id="row1">
+                <td colspan="3"><input type="text" class="display_box" id="result" disabled ></td>
+                <td><input type="button" class="cancel" value="C" onclick="clearScreen()" style="background-color: #fb0066;"></td>
+            </tr>
+            <!-- Area for entering the Value -->
+            <!-- Input Area -->
+            <tr class="output" id="row2">
+                <td><input type="button" class="number" value="7" onclick="display('7')"/></td>
+                <td><input type="button" class="number" value="8" onclick="display('8')"/></td>
+                <td><input type="button" class="number" value="9" onclick="display('9')"/></td>
+                <td><input type="button" class="number" value="/" onclick="display('/')"/></td>
+            </tr>
+            <tr class="output" id="row3">
+                <td><input type="button" class="number" value="4" onclick="display('4')"/></td>
+                <td><input type="button" class="number" value="5" onclick="display('5')"/></td>
+                <td><input type="button" class="number" value="6" onclick="display('6')"/></td>
+                <td><input type="button" class="number" value="*" onclick="display('*')"/></td>
+            </tr>
+            <tr class="output" id="row4">
+                <td><input type="button" class="number" value="1" onclick="display('1')"/></td>
+                <td><input type="button" class="number" value="2" onclick="display('2')"/></td>
+                <td><input type="button" class="number" value="3" onclick="display('3')"/></td>
+                <td><input type="button" class="number" value="+" onclick="display('+')"/></td>
+            </tr>
+            <tr class="output" id="row5">
+                <td><input type="button" class="number" value="." onclick="display('.')"/></td>
+                <td><input type="button" class="number" value="0" onclick="display('0')"/></td>
+                <td><input type="button" class="number" value="00" onclick="display('00')" /></td>
+                <td><input type="button" class="number" value="-" onclick="display('-')"/></td>
+            </tr>
+            <tr>
+                <td colspan="4"><input type="button" class="equals" value="=" onclick="calculate()" style="background-color: #fb0066;"/></td>
+            </tr>
+        </table>
+    </div>
+
+    <footer>
+        <a href="#">FAQ</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">&copy; 2019 | abhiiiiiiijeet</a>
+        <a href="../../index.html">Main Page</a>
+    </footer>
+    <script src="calculator_js.js"></script>
+</body>
+</html>
